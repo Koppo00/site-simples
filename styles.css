@@ -1,0 +1,28 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: none; /* Escondido por padrão */
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Mostrar a imagem somente em telas menores que 768px (celulares e tablets pequenos) */
+@media only screen and (max-width: 768px) {
+    .container {
+        display: flex; /* Exibe a imagem apenas em telas pequenas */
+    }
+}
